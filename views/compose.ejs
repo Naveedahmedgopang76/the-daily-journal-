@@ -1,0 +1,29 @@
+<%- include("partials/header") %>
+<main>
+  <div class="container">
+    <h1>Compose New Journal Entry</h1>
+    <form action="/compose" method="POST">
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input
+          type="text"
+          class="form-control"
+          id="title"
+          name="postTitle"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="content" class="form-label">Content</label>
+        <textarea
+          class="form-control"
+          id="content"
+          name="content"
+          rows="10"
+          required
+        ></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Save Entry</button>
+    </form>
+  </div>
+</main>

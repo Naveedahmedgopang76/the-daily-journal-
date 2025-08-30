@@ -1,0 +1,21 @@
+/* Make the page take full height */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Let main content grow */
+main {
+  flex: 1;
+}
+
+/* Footer stays at the bottom */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
